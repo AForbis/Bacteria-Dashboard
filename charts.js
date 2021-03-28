@@ -155,7 +155,7 @@ function buildCharts(sample) {
       type: "indicator",
       mode: "gauge+number",
       gauge: {
-        axis: { range: [null, 10] },
+        axis: { range: [null, 10], tickwidth: 1, tickcolor: "darkblue" },
         bar: { color: "black" },
         steps: [
           {range: [0,2], color: "red" },
@@ -170,7 +170,7 @@ function buildCharts(sample) {
     
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-      title: "Belly Button Washing Frequency",
+      title: "Belly Button Washing Frequency <br> Scrubs per Week",
       "titlefont": {"size": 24},
       autosize: true,
       paper_bgcolor: 'lightgray',
